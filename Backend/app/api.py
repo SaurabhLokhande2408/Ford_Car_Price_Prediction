@@ -2,6 +2,7 @@ import logging
 
 import pandas as pd
 from fastapi import FastAPI, HTTPException, status
+from fastapi.middleware.cors import CORSMiddleware
 
 from Backend.app.pydantic_models import (
     CarData,
@@ -15,6 +16,14 @@ logger = logging.getLogger(__name__)
 app = FastAPI(
     title="Car Price Prediction for Ford",
     description="ML model for predicting car prices based on various features.",
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origin_regex=r"https?://(localhost|127\.0\.0\.1|0\.0\.0\.0)(:\d+)?",
+    allow_methods=["GET", "POST", "OPTIONS"],
+    allow_headers=["*"],
+    allow_credentials=True,
 )
 
 

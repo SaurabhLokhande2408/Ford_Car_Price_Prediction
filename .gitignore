@@ -34,10 +34,16 @@ __pycache__/
 venv/
 env/
 .pytest_cache/
+.ipynb_checkpoints/
 .mypy_cache/
 .pytype/
 .pyre/
+.ruff_cache/
+.tox/
 *.egg-info/
+.coverage
+.coverage.*
+htmlcov/
 
 # Databases and local data
 *.sqlite3
