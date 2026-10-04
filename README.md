@@ -147,7 +147,7 @@ The trained scikit-learn pipeline object is approximately 253 MB and managed via
 
 ```bash
 git lfs install
-git clone [https://github.com/SaurabhLokhande2408/Ford_Car_Price_Prediction.git](https://github.com/SaurabhLokhande2408/Ford_Car_Price_Prediction.git)
+git clone https://github.com/SaurabhLokhande2408/Ford_Car_Price_Prediction.git
 cd Ford_Car_Price_Prediction
 git lfs pull          # Run this if cloned prior to setting up Git LFS
 ```
